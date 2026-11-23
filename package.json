@@ -1,0 +1,21 @@
+{
+  "name": "intake-agent-adapters",
+  "version": "0.2.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.4",
+  "scripts": {
+    "mcp": "bun --no-env-file adapter.ts mcp",
+    "http": "bun --no-env-file adapter.ts http",
+    "check": "tsc --noEmit --strict --skipLibCheck --target esnext --module preserve --moduleResolution bundler adapter.ts adapter.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.1.13"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.14",
+    "typescript": "5.9.3"
+  }
+}
