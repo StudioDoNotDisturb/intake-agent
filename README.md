@@ -4,6 +4,20 @@ The CLI plans placements for explicitly selected files on Windows local NTFS and
 
 Intake Agent helps you file, inventory, and transcribe selected media. File placements require a reviewed plan and explicit approval. The journal tracks progress so you can recover interrupted placements and request undo for a completed move if the files and paths still match. You choose when to run it.
 
+## Set up with my AI
+
+Copy the prompt below and paste it into an AI assistant with access to your local terminal. For manual setup, see [Core installation](#core-installation).
+
+```text
+Please set up the Intake Agent core CLI on my computer.
+
+1. Use your local terminal to check my OS, architecture, and existing tools. If you only have a remote terminal or chat access, give me local setup instructions and tell me what I need to run.
+2. Use the official v0.2.0 release at https://github.com/StudioDoNotDisturb/intake-agent/releases/tag/v0.2.0. Download intake-agent-0.2.0-source.zip from that release and verify its SHA-256 before extracting it. The expected hash is dcc16374900811392e83564d62949e1ed57123604470172b185ddda9b20a2452. Stop if the hash differs.
+3. Follow the release README. The core CLI needs Rust 1.99 or newer, Cargo, and a host linker. Ask me before installing a missing prerequisite or making any system-level change. Build and install for my user account with cargo install --locked --path . from the extracted source directory. Leave Bun, MCP, FFmpeg, Python, and models for later.
+4. Run intake-agent diagnostics. Create one sample file and two separate folders in temporary storage, then generate a plan for that one file. Leave the plan unapplied and keep my media folders untouched.
+5. Tell me what you installed, where the executable is, and whether diagnostics and the sample plan succeeded. If setup is blocked, tell me exactly what is missing.
+```
+
 ## What you need
 
 The core tool needs only Rust. Each optional feature needs its own tools, which you install separately. The repository bundles no engines, models or media, and the toolkit downloads nothing for you.
