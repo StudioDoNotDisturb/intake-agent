@@ -4,7 +4,7 @@ The CLI plans placements for explicitly selected files on Windows local NTFS and
 
 Intake Agent helps you file, inventory, and transcribe selected media. File placements require a reviewed plan and explicit approval. The journal tracks progress so you can recover interrupted placements and request undo for a completed move if the files and paths still match. You choose when to run it.
 
-## Set up with my AI
+## Set up with your AI
 
 Copy the prompt below and paste it into an AI assistant with access to your local terminal. For manual setup, see [Core installation](#core-installation).
 
